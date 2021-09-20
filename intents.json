@@ -1,0 +1,388 @@
+{
+    "intents": [{
+            "tag": "greeting",
+            "patterns": ["Hi,how are you ?", "Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up","Hi there","Whats new","What's happenning","Pleased to meet you"],
+            "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?","Hello, thanks for asking","fine","Its going well","Good","All right","Not bad","Very well thnks","I feel grate"],
+            "context_set": ""
+        },
+        {
+            "tag": "name",
+            "patterns": ["what is your name", "what should I call you", "whats your name?","How should i call you","Can i know your name","Please tell your name", "Who are you","How is one to call you"],
+            "responses": ["You can call me Rice-bot.", "I'm Rice-bot!", "Rice-bot","My name is Rice-bot","I am rice-bot","I'm call Rice-bot"],
+            "context_set": ""
+        },
+         {
+            "tag": "continue",
+            "patterns": ["can you help me?", "chould you help me", "?","can you give me a hand","whould you help me","Be supportive of me","give me hand with this"],
+            "responses": ["yes i can and If you want to continue, type Next","sure i will and If you want to continue, type Next","what do you want to know and If you want to continue, type Next"],
+            "context_set": ""
+        },
+
+        {
+            "tag": "Option",
+            "patterns": ["next","Next","NEXT","nEXT"],
+            "responses": ["Please Select the problem:  (1)Rice plant diseases,   (2)Plant insects,   (3)Harmfull weeds  (4)Details about Timely fertilization and how to cultivate paddy for good harvest" ],
+            "context_set": ""
+        },
+        {
+            "tag": "Option_1",
+            "patterns": ["1", "01","Rice plant disesas","plant ddiseases","disesas"],
+            "responses": ["Please Select the diseases:  (1.1)stem rot,   (1.2)false smut,   (1.3)foot rot,  (1.4)blast,   (1.5) Brown Spot "],
+            "context_set": ""
+        },
+        {
+            "tag": "Option_2",
+            "patterns": ["2", "Plant insects","02"],
+            "responses": ["Please Select the insects:  (2.1)Stemborers,   (2.2)Mealybug,   (2.3)Mole Cricket,  (2.4)Rats,   (2.5)Brown planthopper "],
+            "context_set": ""
+        },
+        {
+            "tag": "Option_3",
+            "patterns": ["3", "Harmfull weeds","03"],
+            "responses": ["Please Select the weeds:  (3.1)Torpedo Grass,   (3.2)rice flat sedge,   (3.3)goose grass"],
+            "context_set": ""
+        },
+        {
+            "tag": "Option_4",
+            "patterns": ["4", "fertilizers","04"],
+            "responses": ["Please Select the section you need?:  (4.1)Seed Quality Selection,   (4.2)Land preparation,   (4.3)Crop establishment,   (4.4)Water use & Management,    (4.5)Nutritient Management,  (4.6)Timing to Fertilizers    (4.7)Crop Health  (4.8)Harvest"],
+            "context_set": ""
+        },
+
+        {
+            "tag": "disease_1",
+            "patterns": ["1.1", "Stem rot","Stemrot","stemrot","stem rot"],
+            "responses": ["If you want to know details about Stem rot ,Enter D1.1 or know about how to prevent the Stem rot, Enter P1.1"],
+            "context_set": ""
+        },
+            {
+                "tag": "disease_1_details",
+                "patterns": ["D1.1", "d1.1","D 1.1", "d 1.1"],
+                "responses": ["Stem rot leads to formation of lesions and production of chalky grains and unfilled panicles"],
+                "context_set": ""
+            },
+            {
+                "tag": "disease_1_prevent",
+                "patterns": ["P1.1", "p1.1","P 1.1", "p 1.1"],
+                "responses": ["Chemicals such as fentin hydroxide sprayed at the mid-tillering stage, thiophanate-methyl sprayed at the time of disease initiation can reduce stem rot incidence in the rice field. The use of other fungicides such as Ferimzone and validamycin A also effective against the fungus."],
+                "context_set": ""
+            },
+
+        {
+            "tag": "disease_2",
+            "patterns": ["1.2","falsesmut","false smut","False smut","Falsesmut"],
+            "responses": ["If you want to know details about false smut ,Enter D1.2 or know about how to prevent the false smut, Enter P1.2"],
+            "context_set": ""
+        },
+            {
+                "tag": "disease_2_details",
+                "patterns": ["D1.2", "d1.2","D 1.2", "d 1.2"],
+                "responses": ["False smut causes chalkiness of grains which leads to reduction in grain weight. It also reduces seed germination. False Smut-Does not have much effect on yield False Smut.It is believed to be a harbinger of higher yields as spores mature and spread through the air."],
+                "context_set": ""
+            },
+            {
+                "tag": "disease_2_prevent",
+                "patterns": ["P1.2", "p1.2","P 1.2", "p 1.2"],
+                "responses": ["Paddy varieties have been found to be somewhat resistant to the disease and have not been treated with liquid or powdered fungicides to control economically viable conditions."],
+                "context_set": ""
+            },
+
+        {
+            "tag": "disease_3",
+            "patterns": ["foot rot","1.3","footrot","Foot rot","Footrot"],
+            "responses": ["If you want to know details about Foot rot ,Enter D1.3 or know about how to prevent the Foot rot, Enter P1.3"],
+            "context_set": ""
+        },
+            {
+                "tag": "disease_3_details",
+                "patterns": ["D1.3", "d1.3","D 1.3", "d 1.3"],
+                "responses":["Rice bacterial foot rot is a new bacterial disease of rice found in Taiwan recently. Symptoms of the disease include brown sheath rot and dark brown decay of the tillers. The diseased samples were collected in Chiayi County and bacteria were isolated from the symptomatic tissues."],
+                "context_set": ""
+            },
+            {
+                "tag": "disease_3_prevent",
+                "patterns": ["P1.3", "p1.3","P1.3"],
+                "responses": ["Fungicides are most effective when used in combination with cultural control strategies. You can use Captan 75, Captan 30-DD or Fludioxonil"],
+                "context_set": ""
+            },
+
+        {
+            "tag": "disease_4",
+            "patterns": ["blast","1.4","Blast"],
+            "responses":["If you want to know details about Blast ,Enter D1.4 or know about how to prevent the Blast, Enter P1.4"],
+            "context_set": ""
+        },
+            {
+                "tag": "disease_4_details",
+                "patterns": ["D1.4", "d1.4","D 1.4", "d 1.4"],
+                "responses": ["most harmful Fungi Disease cam be effected any type of the plant usualy called neck rot after the efected on blast disease Bol paddy spikes on the paddy leaf "],
+                "context_set": ""
+            },
+            {
+                "tag": "disease_4_prevent",
+                "patterns": ["P1.4", "p1.4","P 1.4", "p 1.4"],
+                "responses": ["Can be used Resistance variant and correct usage of chemical fertilizer should be used in Disease control and If you want to use chemicals, you can use Edifenphos(300 gl EC) with water 10l to 25ml of ratioin 800ml-1000ml for one hectare or you can use Kasumagaisin(20 gl SL) with water 10l to 15ml of ratio in 600ml for one hectare or you can use Kabendasiyam(50 gl SC) with water 10l to 7ml of ratio.in 300ml for one hectare "],
+                "context_set": ""
+            },
+        
+        {
+            "tag": "disease_5",
+            "patterns": ["BrownSpot ","1.5","Brown Spot ","brown spot ","brownspot "],
+            "responses":["If you want to know details about Brown Spot ,Enter D1.5 or know about how to prevent the Brown Spot, Enter P1.5"],
+            "context_set": ""
+        },
+            {
+                "tag": "disease_5_details",
+                "patterns": ["D1.5", "d1.5","D 1.5", "d 1.5"],
+                "responses": ["Brown spot is a fungal disease. Its most observable damage are the numerous big spots on the leaves which can kill the whole leaf. low level of Water aeration or low level of Nutrients can be effected to this Disease and distribute through the Air"],
+                "context_set": ""
+            },
+            {
+                "tag": "disease_5_prevent",
+                "patterns": ["P1.5", "p1.5","P 1.5", "p 1.5"],
+                "responses": ["Cultivation of resistant varieties and Fertilizing the soil with minerals can be used for avoid from this Disease Soil fertilization with organic manure helps in disease control. Keeping the field free from weeds also helps prevent the disease"],
+                "context_set": ""
+            },
+
+
+
+
+            {
+                "tag": "insects_1",
+                "patterns": ["2.1", "Stemborers","stemborers","2.1 Stemborers"],
+                "responses": ["If you want to know details about Stem rot ,Enter D2.1 or know about how to prevent the Stem rot, Enter P2.1"],
+                "context_set": ""
+            },
+                {
+                    "tag": "insects_1_details",
+                    "patterns": ["D2.1", "d2.1","D 2.1", "d 2.1"],
+                    "responses": ["Stem borers can destroy rice at any stage of the plant from seedling to maturity.They feed upon tillers and causes deadhearts or drying of the central tiller, during vegetative stage; and causes whiteheads at reproductive stage."],
+                    "context_set": ""
+                },
+                {
+                    "tag": "insects_1_prevent",
+                    "patterns": ["P2.1", "p2.1","P 2.1", "p 2.1"],
+                    "responses": ["Use resistant varieties,  At seedbed and transplanting, handpick and destroy egg masses,    Raise level of irrigation water periodically to submerge the eggs deposited on the lower parts of the plant ,      Before transplanting, cut the leaf-top to reduce carry-over of eggs from the seedbed to the field,    Ensure proper timing of planting and synchronous planting, harvest crops at ground level to remove the larvae in stubble, remove stubble and volunteer rice, plow and flood the field.   And To avoid thi use Applied early in the season on infested plants, neem oil can be effective against Stem Borers. The 'push-pull' method can be very effective: Crops like Desmodium can be intercropped with millet. Desmodium acts as a repellent, so the moths are 'pushed' away from the millet."],
+                    "context_set": ""
+                },
+    
+            {
+                "tag": "insects_2",
+                "patterns": ["2.2","Mealybug","mealybug","MealyBug","2.2 Mealybug"],
+                "responses": ["If you want to know details about false smut ,Enter D2.2 or know about how to prevent the false smut, Enter P2.2"],
+                "context_set": ""
+            },
+                {
+                    "tag": "insects_2_details",
+                    "patterns": ["D2.2", "d2.2","D 2.2", "d 2.2"],
+                    "responses": [" Mealybugs feed by sucking plant juices which weakens the plant and causes the plant's leaves to turn yellow, wilt and drop. The insects also produce honeydew, a sticky substance that increases mold growth on plants and attracts feeding ants."],
+                    "context_set": ""
+                },
+                {
+                    "tag": "insects_2_prevent",
+                    "patterns": ["P2.2", "p2.2","P 2.2", "p 2.2"],
+                    "responses": ["Insecticides. Insecticidal soaps, horticultural oil, or neem oil insecticides applied directly on mealybugs can provide some suppression, especially against younger nymphs that have less wax accumulation."],
+                    "context_set": ""
+                },
+    
+            {
+                "tag": "insects_3",
+                "patterns": ["Mole Cricket","2.3","Molecricket","mole cricket","2.3 Mole Cricket"],
+                "responses": ["If you want to know details about Foot rot ,Enter D2.3 or know about how to prevent the Foot rot, Enter P2.3"],
+                "context_set": ""
+            },
+                {
+                    "tag": "insects_3_details",
+                    "patterns": ["D2.3", "d2.3","D 2.3", "d 2.3"],
+                    "responses":["Mole crickets are polyphagous. They feed on the underground parts of almost all-upland crops. They occasionally become sufficiently abundant to cause heavy damage to roots and basal parts of rice plants growing in raised nursery beds or upland conditions."],
+                    "context_set": ""
+                },
+                {
+                    "tag": "insects_3_prevent",
+                    "patterns": ["P2.3", "p2.3","P 2.3", "p 2.3"],
+                    "responses": ["Insecticides. Insecticidal soaps, horticultural oil, or neem oil insecticides applied directly on mealybugs can provide some suppression, especially against younger nymphs that have less wax accumulation."],
+                    "context_set": ""
+                },
+    
+            {
+                "tag": "insects_4",
+                "patterns": ["Rats","2.4","2.4 Rats","rats"],
+                "responses":["If you want to know details about Blast ,Enter D2.4 or know about how to prevent the Blast, Enter P2.4"],
+                "context_set": ""
+            },
+                {
+                    "tag": "insects_4_details",
+                    "patterns": ["D2.4", "d2.4","D 2.4", "d 2.4"],
+                    "responses": ["Rice field rats cut or pull up transplanted plants. They also chop down the young seedlings. At booting stage, they feed on rice panicles. On the other hand, during ripening stage, they feed on developing rice grains.s"],
+                    "context_set": ""
+                },
+                {
+                    "tag": "insects_4_prevent",
+                    "patterns": ["P2.4", "p2.4","P 2.4", "p 2.4"],
+                    "responses": ["Keep rice bunds (banks) in the crops less than 30 cm wide to prevent rats from burrowing.,  Keep the edges of the field, the bunds, and surrounding areas clean and free of tall weeds and hiding areas for rats.,  Plant at the same time as your neighbors—within 2 weeks of each other."],
+                    "context_set": ""
+                },
+            
+            {
+                "tag": "insects_5",
+                "patterns": ["Brownplanthopper ","2.5","Brown Planthopper ","brown planthopper","2.5 Brown planthopper "],
+                "responses":["If you want to know details about Brown Spot ,Enter D2.5 or know about how to prevent the Brown Spot, Enter P2.5"],
+                "context_set": ""
+            },
+                {
+                    "tag": "insects_5_details",
+                    "patterns": ["D2.5", "d2.5","D 2.5", "d 2.5"],
+                    "responses": ["The brown planthopper (BPH) is an insect pest of rice in Terai. BPH is a small brown insect found mainly on the base of rice plants above the water level. Adults and young suck the plant sap from leaf sheathes, causing yellowing of lower and then upper leaves."],
+                    "context_set": ""
+                },
+                {
+                    "tag": "insects_5_prevent",
+                    "patterns": ["P2.5", "p2.5","P 2.5", "p 2.5"],
+                    "responses": ["Remove weeds from the field and surrounding areas., Avoid indiscriminate use of insecticide, which destroys natural enemies.,  Use a resistant variety. Contact your local agriculture office for an up-to-date list of available varities.,  Critical numbers: At a density of 1 BPH/stem or less there is still time to act in case the numbers increase. In addition if yo want to use chemicals, Insecticides are only recommended if critical numbers are found, or if more planthoppers than natural enemies are observed. Insecticides that can be used against the pest include buprofezin, pymetrozine, etofenprox, or alternating compounds."],
+                    "context_set": ""
+                },
+    
+
+
+
+
+            {
+                "tag": "weed_1",
+                "patterns": ["3.1", "Torpedo Grass","Torpedo grass","torpedo grass","3.1 torpedo grass"],
+                "responses": ["If you want to know details about Stem rot ,Enter D3.1 or know about how to prevent the Stem rot, Enter P3.1"],
+                "context_set": ""
+            },
+                {
+                    "tag": "weed_1_details",
+                    "patterns": ["D3.1", "d3.1","D 3.1", "d 3.1"],
+                    "responses": ["Torpedograss is a scourge in area lawns, flowerbeds and landscapes. Even if introduced into a small area, this weed can rapidly spread to become a major problem. ... The rhizomes can travel a foot or more deep, and the hard points are able to punch through landscape fabric and weed barriers."],
+                    "context_set": ""
+                 },
+                {
+                    "tag": "weed_1_prevent",
+                    "patterns": ["P3.1", "p3.1","P 3.1", "p 3.1"],
+                    "responses": ["Glyphosate has been the most effective herbicide used to control torpedograss. A 2 to 3% solution of glyphosate (Roundup, etc.) is very effective. Imazapyr (Arsenal, Chopper, Habitat) is also very effective at 0.5 to 1% solution and In centipedegrass lawns, you can use the herbicide sethoxydim (Vantage or Poast) to suppress torpedograss and kill grassy weeds. It does not hurt centipedegrass if applied as directed. "],
+                    "context_set": ""
+                },
+        
+            {
+                "tag": "weed_2",
+                "patterns": ["3.2","rice flat sedge","Rice Flat Sedge","Rice flat sedge","3.2 rice flat sedge"],
+                "responses": ["If you want to know details about false smut ,Enter D3.2 or know about how to prevent the false smut, Enter P3.2"],
+                "context_set": ""
+            },
+                {
+                    "tag": "weed_2_details",
+                    "patterns": ["D3.2", "d3.2","D 3.2", "d 3.2"],
+                    "responses": ["Cyperus iria (also known as rice flat sedge and rice flatsedge) is a smooth, tufted sedge found worldwide. The roots are yellowish-red and fibrous. The plant often grows in rice paddies, where it is considered to be a weed"],
+                    "context_set": ""
+                },
+                {
+                    "tag": "weed_2_prevent",
+                    "patterns": ["P3.2", "p3.2","P 3.2", "p 3.2"],
+                    "responses": ["A number of herbicides are approved for use in rice but their use is dictated by the conditions used to grow the crop, e.g. whether the crop is irrigated, rainfed lowland, upland and deepwater. C. iria is susceptible to the herbicides commonly used in rice: bensulfuron, bentazone, bifenox + 2,4-D, butachlor, butralin, 2,4-D, MCPA, molinate, oxadiazon, pendimethalin, piperophos + dimethametryn, pretilachlor + antidote (e.g. fenclorim), propanil, thiobencarb, thiobencarb + 2,4-D. Cinmethylin and fluorodifen were also active against C. iria (Ampong-Nyarko and DeDatta, 1991). Paraquat and glyphosate can both be used as non-selective, post-emergence herbicides against C. iria, for example in land preparation using zero-tillage."],
+                    "context_set": ""
+                },
+        
+            {
+                "tag": "weed_3",
+                "patterns": ["goose grass","3.3","Goose grass","Goose Grass","3.3 goose grass"],
+                "responses": ["If you want to know details about Foot rot ,Enter D3.3 or know about how to prevent the Foot rot, Enter P3.3"],
+                "context_set": ""
+            },
+                {
+                    "tag": "weed_3_details",
+                    "patterns": ["D3.3", "d3.3","D 3.3", "d 3.3"],
+                    "responses":["Goose grass is an annual tufted grass, growing up to 60 cm high. The grass has a strong and well developed root system. A characteristic of this weed is its powerful initial root development."],
+                    "context_set": ""
+                },
+                {
+                    "tag": "weed_3_prevent",
+                    "patterns": ["P3.3", "p3.3","P 3.3", "p 3.3"],
+                    "responses": ["Plow and harrow various times before planting. Depending on weed population, three or more operations may be done.,  Allow weeds to emerge for at least 2 weeks then kill by another shallow tillage. It reduces the number of weed seeds in the soil, and greatly reduces weeds for the subsequent crop."],
+                    "context_set": ""
+                },
+        
+           
+           
+       
+
+                {
+                    "tag": "Selection_1",
+                    "patterns": ["(4.1)Seed Quality Selection", "4.1","(4.1)", "seed","Seed Quality Selection"],
+                    "responses": ["Seed is a living product that must be grown, harvested, and processed correctly in order to realize the yield potential of any rice variety. Good quality seed can increase yields by 5-20%. Using good seed leads to lower seeding rates, higher crop emergence, reduced replanting, more uniform plant stands, and more vigorous early crop growth. Vigorous growth in early stages reduces weed problems and increases crop resistance to insect pests and diseases. All of these factors contribute to higher yields and more productive rice farms. Good seed is pure (of the chosen variety), full and uniform in size, viable (more than 80% germination with good seedling vigor), and free of weed seeds, seed-borne diseases, pathogens, insects, or other matter."],
+                    "context_set": ""
+                },
+                {
+                    "tag": "Selection_2",
+                    "patterns": ["(4.2)Land preparation", "4.2","(4.2)", "Land","Land preparation"],
+                    "responses": ["Before rice can be planted, the soil should be in the best physical condition for crop growth and the soil surface is level. Land preparation involves plowing and harrowing to ‘till’ or dig-up, mix and level the soil. Tillage allows the seeds to be planted at the right depth, and also helps with weed control. Farmers can till the land themselves using hoes and other equipment or they can be assisted by draft animals, such as buffalo, or tractors and other machinery. Next, the land is leveled to reduce the amount of water wasted by uneven pockets of too-deep water or exposed soil. Effective land leveling allows the seedlings to become established more easily, reduces the amount of effort required to manage the crop, and increases both grain quality and yields."],
+                    "context_set": ""
+                },
+                {
+                    "tag": "Selection_3",
+                    "patterns": ["(4.3)Crop establishment", "4.3","(4.3)", "Crop establishment","establishment"],
+                    "responses": ["The two main practices of establishing rice plants are transplanting and direct seeding.Transplanting  is the most popular plant establishment technique across Asia. Pre- germinated seedlings are transferred from a seedbed to the wet field. It requires less seed and is an effective method to control weeds, but requires more labor. Seedlings may be transplanted by either machine or hand.Direct seeding involves broadcasting dry seed or pre-germinated seeds and seedlings by hand or planting them by machine. In rainfed and deepwater ecosystems, dry seed is manually broadcast onto the soil surface and then incorporated either by ploughing or by harrowing while the soil is still dry. In irrigated areas, seed is normally pre- germinated prior to broadcasting."],
+                    "context_set": ""
+                },
+                {
+                    "tag": "Selection_4",
+                    "patterns": ["(4.4)Water use & Management", "4.4","(4.4)", "Water use & Management","Water"],
+                    "responses": ["Cultivated rice is extremely sensitive to water shortages. To ensure sufficient water, most rice farmers aim to maintain flooded conditions in their field. This is especially true for lowland rice. Good water management in lowland rice focuses on practices that conserve water while ensuring sufficient water for the crop. In rainfed environments when optimal amounts of water may not be available for rice production, a suite of options are available to help farmers cope with different degrees and forms of water scarcity. It includes sound land preparation and pre-planting activities followed by techniques such as saturated soil culture, alternate wetting and drying, raised beds, mulching, and use of aerobic rice that can cope with dryer conditions."],
+                    "context_set": ""
+                },{
+                    "tag": "Selection_5",
+                    "patterns": ["(4.5)Nutritient Management", "4.5","(4.5)", "Nutritient  Management","Nutritient"],
+                    "responses": ["At each growth stage, the rice plant has specific nutrient needs. This makes nutrient management a critical aspect of rice farming. The unique properties of flooded soils make rice different from any other crop. Because of prolonged flooding in rice fields, farmers are able to conserve soil organic matter and also receive free input of nitrogen from biological sources, which means they need little or no nitrogen fertilizer to retain yields. "],
+                    "context_set": ""
+                },
+                {
+                    "tag": "Selection_6",
+                    "patterns": ["(4.6)Timing to Fertilizers ", "4.6","(4.6)", "Timing to Fertilizers ","Timing","Fertilizers"],
+                    "responses": ["Firstly , Phospate fertilizer should be applied at the time of sowing. then phospate fertilizer should be applied 25 days after sowing.Finaly Phospate, potassium, urea fertilizers should be applied in the ratio of 1:1:2 twenty five days after sowing. "],
+                    "context_set": ""
+                },
+                {
+                    "tag": "Selection_7",
+                    "patterns": ["(4.7)Crop Health", "4.7","(4.7)", "Crop Health","Health"],
+                    "responses": ["The rice plant has a wide array of ‘enemies’ in the field. These include rodents, harmful insects, viruses, diseases, and weeds. Farmers manage weeds through water management and land preparation, by hand weeding, and in some cases herbcide application. Understanding the interactions among pests, natural enemies, host plants, other organisms, and the environment allows farmers to determine what if any pest management may be necessary."],
+                    "context_set": ""
+                },{
+                    "tag": "Selection_8",
+                    "patterns": ["(4.8)Harvest", "4.8","(4.8)", "Harvest","harvest"],
+                    "responses": ["Harvesting is the process of collecting the mature rice crop from the field. Depending on the variety, a rice crop usually reaches maturity at around 105–150 days after crop establishment. Harvesting activities include cutting, stacking, handling, threshing, cleaning, and hauling. Good harvesting methods help maximize grain yield and minimize grain damage and deterioration.Harvesting can be done manually or mechanically"],
+                    "context_set": ""
+                },
+                
+
+
+
+
+
+
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me","I appriciate your help","I am gratefull for you","thank you for your assistent in this matter","thnak you for taking the time" ],
+            "responses": ["Happy to help!", "Any time!", "My pleasure","No worries","Glad i could help" ,"No problem"],
+            "context_set": ""
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["cya","bye","good bye","See you later", "Goodbye", "I am Leaving", "Have a Good day","Talk to your latter", "I am off"],
+            "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!","see you later", "its like good bye but shorter"],
+            "context_set": ""
+        },
+        {
+         "tag": "no answer",
+         "patterns": ["I","do","this"],
+         "responses": ["Sorry", "i can't understand you", "please retry","retry","can't understand","sorry"],
+         "context": [""]
+        },
+        {
+         "tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        }
+    ]
+}

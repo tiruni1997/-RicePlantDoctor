@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url="{{ url_for('static', filename='images/3.jpeg') }}";
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content{
+    
+    font-family: monospace;
+    background: white;
+    width: 50%;
+    padding: 40px;
+    margin: 100px auto;
+
+
+}
+nav{
+    background-color:#004d13;
+    height: 100px;
+}
+
+label.logo
+{
+    color: white;
+    font-size: 50px;
+    line-height: 80px;
+    
+    padding: 0 70px;
+    font-weight: bold;
+    margin-left:  5px; 
+}
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 25px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    
+}
+a.active,a:hover{
+    background: #208000;
+    transition: .5s;
+}
+
+.form-area{
+    position: absolute;
+
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5) ;
+    padding: 40px; 
+    
+}
+
+.form-area1{
+    position: absolute;
+
+    top: 93%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 400px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5) ;
+    padding: 40px; 
+    
+}
+/*
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}*/
+
+.container
+{
+position: absolute;
+transform: translate(-50%,-50%);
+top: 70%;
+left: 50%;
+
+}
+
+.button
+{
+    position: relative;
+    text-align: center;
+    width: 150px; 
+    height: 50px;
+    padding: 10px;
+    font-size: 25px;
+    color: #15f4ee;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    border: 5px solid #15f4ee;
+    
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 1.5s;
+}
+.button:hover
+{
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+                0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee ;
+}
+
+
+
+
+

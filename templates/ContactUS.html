@@ -1,0 +1,67 @@
+<html>
+<head>
+    <link rel= "stylesheet" type="text/css" href="contact.css" />
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='contact.css') }}">
+    <script src="http://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+
+
+<body background="{{ url_for('static', filename='images/8.jpg') }}">
+<nav>
+
+  <img src="{{ url_for('static', filename='images/Logo.png') }}" style="width: 80px;"  >
+<label class="logo">RicePlantDoctor</label>
+
+<ul>
+ 
+  <li><a href="/">Home</a></li>
+  <li><a href="/index/AboutUs">About</a></li>
+  <li><a href="/index/ContactUS">ContactUs</a></li>
+  
+  
+</ul>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<table width="1313" border="0">
+  <tr>
+    <td width="210" height="208"><p class="font2"><img src="{{ url_for('static', filename='images/Call.png') }}" width="160" height="130" /></p></td>
+    <td width="216" class="font3"><p class="f1">HOTLINE:</p>
+      <p class="f1">033-2221422</p>
+    <p class="f1">033-2222422</p></td>
+    <td width="203" class="font2"><p><img src="{{ url_for('static', filename='images/mail.png') }}" width="164" height="133" /></p></td>
+    <td width="666" class="font2"><p class="f1">Email:</p>
+      <p class="f1"><a href="#"> riceplantdoctor@gmail.com</a></p>
+      
+  </tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<table width="1441" height="197"  border="0" bgcolor="#CCCCCC" >
+  <tr>
+    <td width="454" height="191"><h2 class="fnew">RicePlantDoctor</h2>
+    
+    <td width="2442"><h2 class="fnew">Share This Website</h2>
+    <p><a href="https://www.facebook.com/"><img src="{{ url_for('static', filename='images/fb.png') }}" width="68" height="68"  ></a>
+    <a href="https://twitter.com/login?lang=en"><img src="{{ url_for('static', filename='images/twe.png') }} "width="74" height="64" /></a>
+   <a href="https://www.instagram.com/accounts/login/?hl=en"> <img src="{{ url_for('static', filename='images/ins.png') }} "width="76" height="69" /></a>
+   <a href="https://www.google.com/search?source=hp&ei=Sep_XJy2IIvXz7sPmOipuAI&q=gmail&btnK=Google+Search&oq=g&gs_l=psy-ab.3.0.35i39l2j0l8.3297.3297..5011...1.0..0.196.383.0j2....1..0....1..gws-wiz.....6.fQmT-25CJew">
+   <img src="{{ url_for('static', filename='images/email.png') }}" width="70" height="68" /></a></p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+
+</body>
+
+</html>
